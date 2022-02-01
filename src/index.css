@@ -16,3 +16,7 @@ body {
   padding-bottom: 20px;
 }
 
+p {
+  font-size: 30px;
+  font-weight: bolder;
+}
