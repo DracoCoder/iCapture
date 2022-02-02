@@ -1,8 +1,8 @@
 {
-  "name": "tron-forge",
-  "productName": "tron-forge",
-  "version": "1.0.0",
-  "description": "My Electron application description",
+  "name": "icapture",
+  "productName": "iCapture",
+  "version": "0.5.0",
+  "description": "Simple Electron based Screen Rcording Application",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -12,8 +12,8 @@
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
-  "author": "jeffd23",
-  "license": "MIT",
+  "author": "DracoCoder",
+  "license": "Open-Source",
   "config": {
     "forge": {
       "packagerConfig": {},
@@ -21,7 +21,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "tron_forge"
+            "name": "iCapture"
           }
         },
         {
