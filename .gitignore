@@ -90,3 +90,6 @@ out/
 
 #Electron-builder
 dist/
+
+#Releases
+Releases/
