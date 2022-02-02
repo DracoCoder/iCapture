@@ -9,7 +9,26 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "build-installer": "electron-builder"
+  },
+  "build": {
+    "appId": "icapture",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/img/logo.ico",
+      "requestedExecutionLevel": "requireAdministrator"
+    },
+    "nsis": {
+      "installerIcon": "src/img/logo.ico",
+      "uninstallerIcon": "src/img/logo.ico",
+      "uninstallDisplayName": "iCapture Uninstaller",
+      "license": "license.txt",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   },
   "keywords": [],
   "author": "DracoCoder",
