@@ -54,7 +54,11 @@ async function selectSource(source) {
   videoSelectBtn.innerText = source.name;
 
   const constraints = {
-    audio: false,
+    audio: {
+      mandatory: {
+        chromeMediaSource: 'desktop'
+      }
+    },
     video: {
       mandatory: {
         chromeMediaSource: 'desktop',
@@ -63,20 +67,15 @@ async function selectSource(source) {
     }
   };
 
-  // Create Sepearate Audio and Video Streams Then Combine Them
-  const videostream = await navigator.mediaDevices.getUserMedia(constraints);
-  const audiostream = await navigator.mediaDevices.getUserMedia({ video: false, audio: true });
-
-  [videoTrack] = videostream.getVideoTracks();
-  [audioTrack] = audiostream.getAudioTracks();
-
-  //Combined Them
-  var stream = new MediaStream([videoTrack, audioTrack]);
+  //Create A Stream
+  const stream = await navigator.mediaDevices
+    .getUserMedia(constraints);
 
   // Preview the source in a video element
   videoElement.srcObject = stream;
   videoElement.play();
-  videoElement.muted = true; //Mute Preview
+  //Mute Preview
+  videoElement.muted = true;
 
   // Create the Media Recorder
   const options = { mimeType: 'video/webm; codecs=vp9' };
