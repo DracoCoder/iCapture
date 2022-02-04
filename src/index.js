@@ -10,7 +10,7 @@ const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     autoHideMenuBar: true,
-    width: 1000,
+    width: 800,
     height: 750,
     webPreferences: {
       nodeIntegration: true,
