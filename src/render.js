@@ -98,11 +98,11 @@ async function handleStop(e) {
 
   const { filePath } = await dialog.showSaveDialog({
     buttonLabel: 'Save video',
-    defaultPath: `vid-${Date.now()}.webm`
+    defaultPath: `vid-${Date.now()}.mp4`
   });
 
   if (filePath) {
-    writeFile(filePath, buffer, () => console.log('video saved successfully!'));
+    writeFile(filePath, buffer, () => console.log('Video Saved Successfully!'));
   }
 
 }

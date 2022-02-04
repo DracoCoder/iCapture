@@ -2,7 +2,7 @@
   "name": "icapture",
   "productName": "iCapture",
   "version": "0.5.0",
-  "description": "Simple Electron based Screen Rcording Application",
+  "description": "Simple Electron based Screen Recording Application",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
