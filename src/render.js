@@ -104,7 +104,7 @@ async function handleStop(e) {
 
   const { filePath } = await dialog.showSaveDialog({
     buttonLabel: 'Save video',
-    defaultPath: `vid-${Date.now()}.mp4`
+    defaultPath: `%USERPROFILE%/Desktop/iCapture-${Date.now()}.webm`
   });
 
   if (filePath) {
