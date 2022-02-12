@@ -1,7 +1,5 @@
-# <img src="src/img/logo.svg" width="45px" height="45px" /> iCapture Screen Recorder
+# <p align="center"> <img src="src/img/logo.svg" width="64px" height="64px" />  </p>
+# <p align="center"> iCapture Screen Recorder  </p>
+## <p align="center"> Efficient Screen Recorder Developed Using Electron.js and Chromium. </p>
 
-Build a screen recorder with Electron from scratch. 
-
-Simple Windows App👆
-
-<img src="src/img/iCapture.png" width="800" height="800"/>
+<p align="center"> <img src="src/img/iCapture.png" width="800" height="800"/> </p>
